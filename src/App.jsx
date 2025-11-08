@@ -1,11 +1,17 @@
 import React from "react";
+import Header from "./components/Header";
 
 
 
 function App() {
     return (
-        <div>
-            <h1 className="text-3xl font-bold">Helloo, React</h1>
+        <div className="">
+            <div className="mx-auto w-[1500px]">
+           < Header />
+            </div>
+
+            <div className="border-b-1 border-gray-300 w-full mt-2"></div>
+
         </div>
     )
 }
