@@ -1,37 +1,22 @@
-const ProductCard = () => {
+const ProductCard = ({product}) => {
     return (
-        <div className="grid grid-cols-4 gap-6 overflow-hidden">
 
-            <div class="w-[300px] rounded-md border bg-white dark:bg-gray-800 shadow-lg transition-colors duration-500">
+            <div class="w-[300px] rounded-md text-black border border-gray-200 shadow-lg transition-colors duration-500">
                 <img
-                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
+                src={product.image}
                     alt="Laptop"
                     class="h-[200px] w-full rounded-t-md object-cover"
                 />
+
                 <div class="p-4">
-                    <h1 class="inline-flex items-center text-lg font-semibold text-gray-900 dark:text-gray-100">
-                        About Macbook &nbsp;
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
-                        </svg>
+                    <h1 class="inline-flex items-center text-lg font-semibold">
+                        {product.category}
                     </h1>
                     <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
                         debitis?
                     </p>
-                    <div class="mt-4">
-                        <span class="mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300">
-                            #Macbook
-                        </span>
-                        <span class="mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300">
-                            #Apple
-                        </span>
-                        <span class="mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300">
-                            #Laptop
-                        </span>
-                    </div>
+    
                     <button
                         type="button"
                         class="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:focus-visible:outline-white transition-all duration-300"
@@ -40,215 +25,6 @@ const ProductCard = () => {
                     </button>
                 </div>
             </div>
-
-
-            <div class="w-[300px] rounded-md border bg-white dark:bg-gray-800 shadow-lg transition-colors duration-500">
-                <img
-                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
-                    alt="Laptop"
-                    class="h-[200px] w-full rounded-t-md object-cover"
-                />
-                <div class="p-4">
-                    <h1 class="inline-flex items-center text-lg font-semibold text-gray-900 dark:text-gray-100">
-                        About Macbook &nbsp;
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
-                        </svg>
-                    </h1>
-                    <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-                        debitis?
-                    </p>
-                    <div class="mt-4">
-                        <span class="mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300">
-                            #Macbook
-                        </span>
-                        <span class="mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300">
-                            #Apple
-                        </span>
-                        <span class="mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300">
-                            #Laptop
-                        </span>
-                    </div>
-                    <button
-                        type="button"
-                        class="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:focus-visible:outline-white transition-all duration-300"
-                    >
-                        Read
-                    </button>
-                </div>
-            </div>
-
-
-
-
-            <div class="w-[300px] rounded-md border bg-white dark:bg-gray-800 shadow-lg transition-colors duration-500">
-                <img
-                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
-                    alt="Laptop"
-                    class="h-[200px] w-full rounded-t-md object-cover"
-                />
-                <div class="p-4">
-                    <h1 class="inline-flex items-center text-lg font-semibold text-gray-900 dark:text-gray-100">
-                        About Macbook &nbsp;
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
-                        </svg>
-                    </h1>
-                    <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-                        debitis?
-                    </p>
-                    <div class="mt-4">
-                        <span class="mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300">
-                            #Macbook
-                        </span>
-                        <span class="mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300">
-                            #Apple
-                        </span>
-                        <span class="mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300">
-                            #Laptop
-                        </span>
-                    </div>
-                    <button
-                        type="button"
-                        class="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:focus-visible:outline-white transition-all duration-300"
-                    >
-                        Read
-                    </button>
-                </div>
-            </div>
-
-
-
-            <div class="w-[300px] rounded-md border bg-white dark:bg-gray-800 shadow-lg transition-colors duration-500">
-                <img
-                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
-                    alt="Laptop"
-                    class="h-[200px] w-full rounded-t-md object-cover"
-                />
-                <div class="p-4">
-                    <h1 class="inline-flex items-center text-lg font-semibold text-gray-900 dark:text-gray-100">
-                        About Macbook &nbsp;
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
-                        </svg>
-                    </h1>
-                    <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-                        debitis?
-                    </p>
-                    <div class="mt-4">
-                        <span class="mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300">
-                            #Macbook
-                        </span>
-                        <span class="mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300">
-                            #Apple
-                        </span>
-                        <span class="mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300">
-                            #Laptop
-                        </span>
-                    </div>
-                    <button
-                        type="button"
-                        class="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:focus-visible:outline-white transition-all duration-300"
-                    >
-                        Read
-                    </button>
-                </div>
-            </div>
-
-
-            <div class="w-[300px] rounded-md border bg-white dark:bg-gray-800 shadow-lg transition-colors duration-500">
-                <img
-                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
-                    alt="Laptop"
-                    class="h-[200px] w-full rounded-t-md object-cover"
-                />
-                <div class="p-4">
-                    <h1 class="inline-flex items-center text-lg font-semibold text-gray-900 dark:text-gray-100">
-                        About Macbook &nbsp;
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
-                        </svg>
-                    </h1>
-                    <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-                        debitis?
-                    </p>
-                    <div class="mt-4">
-                        <span class="mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300">
-                            #Macbook
-                        </span>
-                        <span class="mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300">
-                            #Apple
-                        </span>
-                        <span class="mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300">
-                            #Laptop
-                        </span>
-                    </div>
-                    <button
-                        type="button"
-                        class="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:focus-visible:outline-white transition-all duration-300"
-                    >
-                        Read
-                    </button>
-                </div>
-            </div>
-
-
-
-            <div class="w-[300px] rounded-md border bg-white dark:bg-gray-800 shadow-lg transition-colors duration-500">
-                <img
-                    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
-                    alt="Laptop"
-                    class="h-[200px] w-full rounded-t-md object-cover"
-                />
-                <div class="p-4">
-                    <h1 class="inline-flex items-center text-lg font-semibold text-gray-900 dark:text-gray-100">
-                        About Macbook &nbsp;
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
-                        </svg>
-                    </h1>
-                    <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-                        debitis?
-                    </p>
-                    <div class="mt-4">
-                        <span class="mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300">
-                            #Macbook
-                        </span>
-                        <span class="mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300">
-                            #Apple
-                        </span>
-                        <span class="mb-2 mr-2 inline-block rounded-full bg-gray-100 dark:bg-gray-700 px-3 py-1 text-[10px] font-semibold text-gray-900 dark:text-gray-300">
-                            #Laptop
-                        </span>
-                    </div>
-                    <button
-                        type="button"
-                        class="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:focus-visible:outline-white transition-all duration-300"
-                    >
-                        Read
-                    </button>
-                </div>
-            </div>
-
-
-
-
-        </div>
     )
 }
 

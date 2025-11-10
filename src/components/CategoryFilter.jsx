@@ -6,17 +6,17 @@ const CategoryFilter = () => {
 
         <div className="category-filter">
 
-            <div className="top-section flex items-center justify-between">
-                <h1>Filters</h1>
-                <span>Clear All</span>
+            <div className="top-section  flex items-center justify-between">
+                <h1 className="text-[20px] font-semibold">Filters</h1>
+                <p className="text-[14px] text-[#38a9fa] font-medium cursor-pointer">Clear All</p>
             </div>
 
-            <div className="categories">
-                <h1>Categories</h1>
+            <div className="categories mt-10">
+                <h1 className="text-[20px] font-semibold mb-4">Categories</h1>
                 <div className="category-title">
                     <div className="checkbox flex items-center gap-2">
                         <input type="checkbox" />
-                        <p>Laptops</p>
+                        <p className="font-normal">Laptops</p>
                     </div>
                 </div>
 

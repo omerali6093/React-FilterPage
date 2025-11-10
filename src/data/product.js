@@ -1,0 +1,42 @@
+export const products = [
+    {
+        id: 1,
+        image: "/images/laptop-1.jpg",
+        title: "Laptop-1",
+        category: "Laptops",
+        price: 250,
+        rating: 4,
+    },
+    {
+        id: 1,
+        image: "/images/laptop-1.jpg",
+        title: "Laptop-1",
+        category: "Laptops",
+        price: 250,
+        rating: 4,
+    },
+    {
+        id: 1,
+        image: "/images/laptop-1.jpg",
+        title: "Laptop-1",
+        category: "Laptops",
+        price: 250,
+        rating: 4,
+    },
+    {
+        id: 1,
+        image: "/images/laptop-1.jpg",
+        title: "Laptop-1",
+        category: "Laptops",
+        price: 250,
+        rating: 4,
+    },
+    {
+        id: 1,
+        image: "/images/laptop-1.jpg",
+        title: "Laptop-1",
+        category: "Laptops",
+        price: 250,
+        rating: 4,
+    },
+]
