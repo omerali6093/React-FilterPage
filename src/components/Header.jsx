@@ -5,7 +5,7 @@ function Header() {
     return (
         <div className="flex items-center justify-between  mt-3 mb-3">
             <div className="header-name">
-                <h1 className="text-[30px] text-[#38a9fa] font-bold">GadgetGrid</h1>
+                <h1 className="text-[30px] text-[#38a9fa] font-bold">GadgetStore</h1>
             </div>
 
             <div className="header-navbars flex items-center list-none gap-15 text-lg">
