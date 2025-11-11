@@ -1,5 +1,5 @@
-
-
+import { categoryTitle } from "../data/category";
+import Checkbox from "./Checkbox";
 
 const CategoryFilter = () => {
     return (
@@ -14,9 +14,10 @@ const CategoryFilter = () => {
             <div className="categories mt-10">
                 <h1 className="text-[20px] font-semibold mb-4">Categories</h1>
                 <div className="category-title">
-                    <div className="checkbox flex items-center gap-2">
-                        <input type="checkbox" />
-                        <p className="font-normal">Laptops</p>
+                    <div className="checkbox">
+                        {categoryTitle.map((category) => 
+                        <Checkbox text={category}/>
+                        )}
                     </div>
                 </div>
 
