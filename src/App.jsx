@@ -23,10 +23,9 @@ function App() {
 
                 <div className="product-section col-span-10 overflow-hidden">
                     <div className="grid grid-cols-4 gap-4 overflow-hidden">
-                        {/* {products.map((product, index) =>
+                        {products.map((product, index) =>
                             <ProductCard key={index} product={product} />
-                        )} */}
-
+                        )}
                     </div>
                 </div>
 

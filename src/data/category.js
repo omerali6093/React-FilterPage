@@ -10,18 +10,18 @@ export const categories = [
         image: '',
     },
     {
-        id: 1,
+        id: 3,
         title: "Mouse",
         image: '',
     },
     {
-        id: 1,
+        id: 4,
         title: "Keyboards",
         image: '',
     },
     {
-        id: 1,
-        title: "Camera",
+        id: 5,
+        title: "Cameras",
         image: '',
     },
 ]

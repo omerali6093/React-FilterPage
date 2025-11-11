@@ -9,19 +9,23 @@ const ProductCard = ({product}) => {
                 />
 
                 <div class="p-4">
+
+                    <h4 className="text-[14px] mb-2  text-gray-600">{product.category}</h4>
+
                     <h1 className="inline-flex items-center text-lg font-semibold">
-                        {product.category}
+                        {product.title}
                     </h1>
-                    <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-                        debitis?
+                    <p className="mt-3 text-sm text-gray-600 ">
+                        {product.description}
                     </p>
+
+                    <p className="mt-3 text-[#38a9fa] font-bold">${product.price}</p>
     
                     <button
                         type="button"
-                        className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:focus-visible:outline-white transition-all duration-300"
+                        className="mt-4 w-full rounded-sm bg-[#38a9fa] px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:focus-visible:outline-white transition-all duration-300"
                     >
-                        Read
+                        Add to cart
                     </button>
                 </div>
             </div>
