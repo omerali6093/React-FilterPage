@@ -8,7 +8,7 @@ const ProductCard = ({product}) => {
                     class="h-[200px] w-full rounded-t-md object-cover"
                 />
 
-                <div class="p-4">
+                <div className="p-4">
 
                     <h4 className="text-[14px] mb-2  text-gray-600">{product.category}</h4>
 
@@ -23,7 +23,7 @@ const ProductCard = ({product}) => {
     
                     <button
                         type="button"
-                        className="mt-4 w-full rounded-sm bg-[#38a9fa] px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:focus-visible:outline-white transition-all duration-300"
+                        className="mt-4 w-full rounded-sm bg-[#38a9fa] px-2 py-1.5 text-sm font-semibold text-white shadow-sm"
                     >
                         Add to cart
                     </button>

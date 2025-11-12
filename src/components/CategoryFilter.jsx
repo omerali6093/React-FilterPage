@@ -15,8 +15,8 @@ const CategoryFilter = () => {
                 <h1 className="text-[20px] font-semibold mb-4">Categories</h1>
                 <div className="category-title">
                     <div className="checkbox">
-                        {categoryTitle.map((category) => 
-                        <Checkbox text={category}/>
+                        {categoryTitle.map((category, index) => 
+                        <Checkbox key={index} text={category}/>
                         )}
                     </div>
                 </div>

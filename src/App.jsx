@@ -1,13 +1,26 @@
 import React from "react";
 import Header from "./components/Header";
 import CategoryFilter from "./components/CategoryFilter";
-import ProductCard from "./components/ProductCard";
-import { products } from "./data/product";
+import { useState } from "react";
+import Products from "./components/Products";
+import { getVisibleProducts } from "./data/product-filter";
 
 
 function App() {
+
+    const [selectedCategory, setSelectedCategory] = useState("Laptops");
+
+    const filterProducts = getVisibleProducts(selectedCategory);
+
+    console.log("Filtered-Products =>", filterProducts);
+    
+
+
+
+    
+
     return (
-        <div className="">
+        <div>
             <div className="mx-auto w-[1500px]">
                 < Header />
             </div>
@@ -22,11 +35,7 @@ function App() {
                 </div>
 
                 <div className="product-section col-span-10 overflow-hidden">
-                    <div className="grid grid-cols-4 gap-4 overflow-hidden">
-                        {products.map((product, index) =>
-                            <ProductCard key={index} product={product} />
-                        )}
-                    </div>
+                    < Products  product={filterProducts}/>
                 </div>
 
             </div>
