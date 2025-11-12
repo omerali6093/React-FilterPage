@@ -1,7 +1,10 @@
 import { categoryTitle } from "../data/category";
 import Checkbox from "./Checkbox";
 
-const CategoryFilter = () => {
+const CategoryFilter = ( { 
+    selectedCategories,
+    onchangeCategory
+ }) => {
     return (
 
         <div className="category-filter">
@@ -16,7 +19,11 @@ const CategoryFilter = () => {
                 <div className="category-title">
                     <div className="checkbox">
                         {categoryTitle.map((category, index) => 
-                        <Checkbox key={index} text={category}/>
+                        <Checkbox 
+                        key={index} 
+                        checked={selectedCategories.includes(category)}
+                        onChange={(e) => onchangeCategory(category, e.target.checked)}
+                        text={category}/>
                         )}
                     </div>
                 </div>
