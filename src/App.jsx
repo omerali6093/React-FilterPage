@@ -49,7 +49,7 @@ function App() {
                 </div>
 
                 <div className="product-section col-span-10 overflow-hidden">
-                    {/* < Products  product={filterProducts}/> */}
+                     < Products  product={filterProducts}/>
                 </div>
 
             </div>

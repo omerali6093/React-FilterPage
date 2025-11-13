@@ -33,7 +33,7 @@ export const products = [
         description: "Sony headphone with best quailty sound",
         category: "Headphones",
         price: 180,
-        rating: 3.5,
+        rating: 1,
     },
     {
         id: 5,

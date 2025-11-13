@@ -1,3 +1,5 @@
+import ProductCardRating from "./ProductCardRating";
+
 const ProductCard = ({ product }) => {
     return (
 
@@ -8,7 +10,7 @@ const ProductCard = ({ product }) => {
                 class="h-[200px] w-full rounded-t-md object-cover"
             />
 
-            <div className="p-4 max-h-30 mb-22">
+            <div className="p-4 max-h-36 mb-24">
 
                 <h4 className="text-[14px] mb-2  text-gray-600">{product.category}</h4>
 
@@ -18,13 +20,16 @@ const ProductCard = ({ product }) => {
                 <p className="mt-3 text-sm text-gray-600 ">
                     {product.description}
                 </p>
-                
+
+                <div className="mt-3">
+                    < ProductCardRating productRating={product.rating}/>
+                </div>
 
             </div>
 
-            <div className="absolute   bottom-0 w-full p-4">
+            <div className="absolute bottom-0 w-full p-4 ">
 
-                <p className="mt-3 text-[#38a9fa] font-bold">${product.price}</p>
+                <p className="mt-5 text-[#38a9fa] font-bold">${product.price}</p>
 
                 <button
                     type="button"

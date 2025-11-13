@@ -9,7 +9,7 @@ const RatingFilter = () => {
     return (
         ratingStars.map((rating) => 
                                 <div className="flex items-center cursor-pointer">
-                <div className="flex items-center gap-1 mb-4">
+                <div className="flex items-center mb-4">
                     {Array(5).fill()
                     .map((_ ,i) =>
                         <svg xmlns="http://www.w3.org/2000/svg"
