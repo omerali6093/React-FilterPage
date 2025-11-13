@@ -4,6 +4,7 @@ import CategoryFilter from "./components/CategoryFilter";
 import { useState } from "react";
 import Products from "./components/Products";
 import { getVisibleProducts } from "./data/product-filter";
+import RatingFilter from "./components/RatingFilter";
 
 
 function App() {
@@ -42,10 +43,13 @@ function App() {
 
                 <div className="category-filter-section p-5 border shadow-md border-gray-100 col-span-2">
                     < CategoryFilter selectedCategories={selectedCategory} onchangeCategory={onchangeCategoryHandler}/>
+                    <div className="rating-filter mt-8">
+                    < RatingFilter />
+                    </div>
                 </div>
 
                 <div className="product-section col-span-10 overflow-hidden">
-                    < Products  product={filterProducts}/>
+                    {/* < Products  product={filterProducts}/> */}
                 </div>
 
             </div>
