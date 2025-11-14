@@ -41,9 +41,10 @@ function App() {
 
             <div className="mx-auto w-[1500px] mt-10  grid grid-cols-12 gap-4">
 
-                <div className="category-filter-section p-5 border shadow-md border-gray-100 col-span-2">
+                <div className="category-filter-section h-[540px] p-5 border shadow-md border-gray-100 col-span-2">
                     < CategoryFilter selectedCategories={selectedCategory} onchangeCategory={onchangeCategoryHandler}/>
-                    <div className="rating-filter mt-8">
+                    <div className="border-b border-gray-300 pt-2"></div>
+                    <div className="rating-filter mt-5">
                     < RatingFilter />
                     </div>
                 </div>
