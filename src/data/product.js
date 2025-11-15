@@ -5,7 +5,7 @@ export const products = [
         title: "Laptop-1",
         category: "Laptops",
         description: "Hp elitebook laptop in best hd screen",
-        price: 250,
+        price: 500,
         rating: 4,
     },
     {
@@ -14,7 +14,7 @@ export const products = [
         title: "Laptop-2",
         description: "Hp elitebook laptop in best hd screen",
         category: "Laptops",
-        price: 350,
+        price: 300,
         rating: 2,
     },
     {
@@ -23,7 +23,7 @@ export const products = [
         title: "Headphone-1",
         description: "Sony headphone with best quailty sound",
         category: "Headphones",
-        price: 150,
+        price: 100,
         rating: 2,
     },
     {
@@ -32,7 +32,7 @@ export const products = [
         title: "Headphones-2",
         description: "Sony headphone with best quailty sound",
         category: "Headphones",
-        price: 180,
+        price: 200,
         rating: 1,
     },
     {
@@ -41,7 +41,7 @@ export const products = [
         title: "Mouse-1",
         description: "Gaming mouse, with best movement",
         category: "Mouse",
-        price: 50,
+        price: 600,
         rating: 2,
     },
     {
@@ -50,7 +50,7 @@ export const products = [
         title: "Mouse-2",
         description: "Gaming mouse, with best movement",
         category: "Mouse",
-        price: 80,
+        price: 700,
         rating: 1,
     },
     {
@@ -59,7 +59,7 @@ export const products = [
         title: "Keyboard-1",
         description: "Best gaming keyboard with comfortable",
         category: "Keyboards",
-        price: 280,
+        price: 800,
         rating: 5,
     },
     {
@@ -68,7 +68,7 @@ export const products = [
         title: "Keyboard-2",
         description: "Best gaming keyboard with comfortable",
         category: "Keyboards",
-        price: 140,
+        price: 900,
         rating: 4,
     },
     {
@@ -77,7 +77,7 @@ export const products = [
         title: "Camera-1",
         description: "Best canon camera with good fucnionality",
         category: "Cameras",
-        price: 440,
+        price: 900,
         rating: 5,
     },
     {
@@ -86,7 +86,7 @@ export const products = [
         title: "Camera-2",
         description: "Best canon camera with good fucnionality",
         category: "Cameras",
-        price: 540,
+        price: 700,
         rating: 3,
     },
 ]
