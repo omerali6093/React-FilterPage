@@ -84,7 +84,7 @@ function App() {
                         <Sorting setSortOption={setSortOption}/>
                     </div>
 
-                    <div className="border-b border-gray-200 mt-6"></div>
+                    <div className="border-b border-gray-200 mt-4"></div>
 
                     <div className="product-cards-section  mt-6">
                      < Products  product={sortedProducts}/>
