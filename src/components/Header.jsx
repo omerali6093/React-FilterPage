@@ -9,8 +9,8 @@ function Header() {
             </div>
 
             <div className="header-navbars flex items-center list-none gap-15 text-lg">
-                <li className="font-semibold cursor-pointer">Shop</li>
-                <li className="font-semibold cursor-pointer">Categories</li>
+                <li className="font-semibold cursor-pointer">Home</li>
+                <li className="font-semibold cursor-pointer">Products</li>
                 <li className="font-semibold cursor-pointer">Deals</li>
             </div>
 
