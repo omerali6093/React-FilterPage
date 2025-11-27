@@ -50,7 +50,7 @@ function App() {
     return (
         <div>
             <div className="mx-auto w-[1500px]">
-                < Header />
+            <Header/>
             </div>
 
             <div className="border-b border-gray-300 w-full mt-2"></div>
@@ -95,6 +95,7 @@ function App() {
             </div>
 
         </div>
+
     )
 }
 

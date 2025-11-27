@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 function Header() {
@@ -10,7 +11,7 @@ function Header() {
 
             <div className="header-navbars flex items-center list-none gap-15 text-lg">
                 <li className="font-semibold cursor-pointer">Home</li>
-                <li className="font-semibold cursor-pointer">Products</li>
+                <Link to='/footer' className="font-semibold cursor-pointer">Product</Link>
                 <li className="font-semibold cursor-pointer">Deals</li>
             </div>
 
